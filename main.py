@@ -87,18 +87,18 @@ def sen_kimsin(update, context):
      message += "Gitmedim bir yere!"
      message += "Seni bırakır mıyım hiç!"
      # Bot gönderilen mesaja özel yanıt döndürüyor
-    update.message.reply_text(message)
+     update.message.reply_text(message)
          
  def nereyekayboldun(update, context):
      message = "İşim çıkmıştı ya \n"
      message += "Hayırdır ne olduydu ?"
      message += "Bensiz iki dk yapamıyon dimii ?  "
      # Bot gönderilen mesaja özel yanıt döndürüyor
-    update.message.reply_text(message)
+     update.message.reply_text(message)
    
 
 def wrongCommand(update, context):
-    update.message.reply_text("Üzgünüm, gönderdiğiniz mesajı anlayamıyorum.")
+     update.message.reply_text("Üzgünüm, gönderdiğiniz mesajı anlayamıyorum.")
 
 
 def main():
