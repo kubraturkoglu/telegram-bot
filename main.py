@@ -3,7 +3,7 @@ import os
 import sys
 
 
-TOKEN = os.getenv("852101360:AAFoqidxWSX86GlfUllipPL0d5TvsMiyg1k")
+TOKEN = os.getenv("TOKEN ")
 API_URL = "https://api.telegram.org/bot" + TOKEN
 
 # Mode ortam değişkeni
