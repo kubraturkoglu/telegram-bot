@@ -82,14 +82,14 @@ def sen_kimsin(update, context):
     # Bot gönderilen mesaja özel yanıt döndürüyor
     update.message.reply_text(message)
     
- def burdamisin(update, context):
+def burdamisin(update, context):
      message = "Burdayım burda :b \n"
      message += "Gitmedim bir yere!"
      message += "Seni bırakır mıyım hiç!"
      # Bot gönderilen mesaja özel yanıt döndürüyor
      update.message.reply_text(message)
          
- def nereyekayboldun(update, context):
+def nereyekayboldun(update, context):
      message = "İşim çıkmıştı ya \n"
      message += "Hayırdır ne olduydu ?"
      message += "Bensiz iki dk yapamıyon dimii ?  "
