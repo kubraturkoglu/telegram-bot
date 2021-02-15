@@ -50,7 +50,7 @@ def help(update, context):
     help_message += "/naber - soruna yanıt verir.\n"
     help_message += "/sen_kimsin - kendini tnaıtır.\n"
     help_message += "/burdamisin - soruna yanıt verir.\n"
-    help_message += "/nereyekayboldun - soruna yanıt verir.\n
+    help_message += "/nereyekayboldun - soruna yanıt verir.\n"
     # Bot gönderilen mesaja özel yanıt döndürüyor
     update.message.reply_text(help_message)
 
