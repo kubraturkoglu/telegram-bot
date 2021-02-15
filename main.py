@@ -49,7 +49,7 @@ def help(update, context):
     help_message += "/selam - selam verir.\n"
     help_message += "/naber - soruna yanıt verir.\n"
     help_message += "/sen_kimsin - kendini tnaıtır.\n"
-     help_message += "/burdamisin - soruna yanıt verir.\n"
+    help_message += "/burdamisin - soruna yanıt verir.\n"
     help_message += "/nereyekayboldun - soruna yanıt verir.\n
     # Bot gönderilen mesaja özel yanıt döndürüyor
     update.message.reply_text(help_message)
@@ -86,14 +86,16 @@ def sen_kimsin(update, context):
      message = "Burdayım burda :b \n"
      message += "Gitmedim bir yere!"
      message += "Seni bırakır mıyım hiç!"
+     # Bot gönderilen mesaja özel yanıt döndürüyor
+    update.message.reply_text(message)
          
  def nereyekayboldun(update, context):
      message = "İşim çıkmıştı ya \n"
      message += "Hayırdır ne olduydu ?"
      message += "Bensiz iki dk yapamıyon dimii ?  "
-   
-    # Bot gönderilen mesaja özel yanıt döndürüyor
+     # Bot gönderilen mesaja özel yanıt döndürüyor
     update.message.reply_text(message)
+   
 
 def wrongCommand(update, context):
     update.message.reply_text("Üzgünüm, gönderdiğiniz mesajı anlayamıyorum.")
