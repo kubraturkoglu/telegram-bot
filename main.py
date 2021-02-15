@@ -16,7 +16,7 @@ if mode == "dev":
         start(CallbackContext(updater.dispatcher))
 elif mode == "prod":
     def run(updater):
-        # Port ve Uygulamanızın adını içeren ortam değişkenleri
+        # Port ve Uygulamanızın adını içeren orrtam değişkenleri
         PORT = int(os.environ.get("PORT", 8443))
         HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME")
         updater.start_webhook(listen="0.0.0.0",
