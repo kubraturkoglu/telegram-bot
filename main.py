@@ -49,6 +49,8 @@ def help(update, context):
     help_message += "/selam - selam verir.\n"
     help_message += "/naber - soruna yanıt verir.\n"
     help_message += "/sen_kimsin - kendini tnaıtır.\n"
+     help_message += "/burdamisin - soruna yanıt verir.\n"
+    help_message += "/nereyekayboldun - soruna yanıt verir.\n
     # Bot gönderilen mesaja özel yanıt döndürüyor
     update.message.reply_text(help_message)
 
@@ -74,9 +76,22 @@ def naber(update, context):
 
 def sen_kimsin(update, context):
     message = "Ya bu nası soru!\n"
-    message += "Muhteşem Kübranın sizlere hazırladığı küçük bir demoyum \n"
-    message += "Kübra is the best bro.\n"
-    message += "Öyle işte sen kimsin?"
+    message += "Benim ben Kübraa \n"
+    message += "Kimle konuştuğunu bilmiyor musun heeğ ?\n"
+    message += "Neyse asıl sen kimsin?"
+    # Bot gönderilen mesaja özel yanıt döndürüyor
+    update.message.reply_text(message)
+    
+ def burdamisin(update, context):
+     message = "Burdayım burda :b \n"
+     message += "Gitmedim bir yere!"
+     message += "Seni bırakır mıyım hiç!"
+         
+ def nereyekayboldun(update, context):
+     message = "İşim çıkmıştı ya \n"
+     message += "Hayırdır ne olduydu ?"
+     message += "Bensiz iki dk yapamıyon dimii ?  "
+   
     # Bot gönderilen mesaja özel yanıt döndürüyor
     update.message.reply_text(message)
 
@@ -97,6 +112,8 @@ def main():
     dp.add_handler(CommandHandler("selam", selam))
     dp.add_handler(CommandHandler("naber", naber))
     dp.add_handler(CommandHandler("sen_kimsin", sen_kimsin))
+    dp.add_handler(CommandHandler("burdamisin", burdamisin))
+    dp.add_handler(CommandHandler("nereyekayboldun", nereyekayboldun))
     # Yanlış bir komut girildiyse burada yakalanacak
     dp.add_handler(MessageHandler(Filters.text, wrongCommand))
 
