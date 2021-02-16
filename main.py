@@ -28,8 +28,8 @@ elif mode == "prod":
         updater.idle()
 else:
     
-sys.exit(1)
-print("Bir mod seçilmedi")
+  sys.exit(1)
+  print("Bir mod seçilmedi")
   
 
 
