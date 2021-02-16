@@ -12,8 +12,9 @@ mode = os.getenv("MODE")
 # Mod'a uyarlı, updater başlatma fonksiyonu belirler
 if mode == "dev":
     def run(updater):
-        updater.start_polling()
-        print("Bot başlatıldı.")
+          print("Bot başlatıldı.")
+          updater.start_polling()
+      
 elif mode == "prod":
     def run(updater):
         # Port ve Uygulamanızın adını içeren orrtam değişkenleri
@@ -26,11 +27,9 @@ elif mode == "prod":
         print("Bot başlatıldı.")
         updater.idle()
 else:
-    print("Bir mod seçilmedi")
-    sys.exit(1)
+    
 
-def run(updater):
-    print("Bot başlatıldı.")
+
     updater.start_polling()
 
 
