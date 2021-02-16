@@ -13,7 +13,7 @@ mode = os.getenv("MODE")
 if mode == "dev":
     def run(updater):
         updater.start_polling()
-      print("Bot başlatıldı.")
+        print("Bot başlatıldı.")
 elif mode == "prod":
     def run(updater):
         # Port ve Uygulamanızın adını içeren orrtam değişkenleri
@@ -23,7 +23,7 @@ elif mode == "prod":
                               port=PORT,
                               url_path=TOKEN)
         updater.bot.set_webhook("https://{}.herokuapp.com/{}".format(HEROKU_APP_NAME, TOKEN))
-       print("Bot başlatıldı.")
+        print("Bot başlatıldı.")
         updater.idle()
 else:
     print("Bir mod seçilmedi")
