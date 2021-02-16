@@ -4,7 +4,7 @@ import sys
 
 
 TOKEN = os.getenv("TOKEN")
-API_URL = "https://api.telegram.org/bot" + TOKEN
+
 
 # Mode ortam değişkeni
 mode = os.getenv("MODE")
@@ -28,9 +28,9 @@ elif mode == "prod":
         updater.idle()
 else:
     
-
-
-    updater.start_polling()
+sys.exit(1)
+print("Bir mod seçilmedi")
+  
 
 
 def start(update, context):
